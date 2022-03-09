@@ -1,4 +1,8 @@
-
+:root {
+    --select-container-bg-color: 41, 177, 221;
+    --main-bg-color: 221, 221, 221;
+    --header-title-color: 41, 177, 221;
+}
 
 * {
     box-sizing: border-box;
@@ -8,4 +12,55 @@
 
 body {
     font-size: 100%;
+}
+
+.box.d-none {
+    display: none;
+}
+
+header.header {
+    padding: 1rem 0 0.1rem 1rem ;
+}
+h1 {
+    color: rgb(var(--header-title-color)); 
+}
+
+.select-container {
+    background-color: rgb(var(--select-container-bg-color));
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+}
+select {
+    background-color: white;
+    border: 1px solid darkgrey;
+}
+.main {
+    background-color: rgb(var(--main-bg-color));
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-content: space-between;
+    justify-content: flex-start;
+    min-height: 800px;
+    padding: 1rem;
+}
+.box {
+    background-color: white;
+    min-width: 180px;
+    min-height: 110px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+.box > i {
+    font-size: 2.5rem;
+}
+.icon-name {
+    text-transform: uppercase;
 }
